@@ -1,0 +1,118 @@
+#photoGallery {
+	left:0;right:0;top:0;bottom:0;
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	background: url('dark.png') repeat;
+	opacity: 0;
+	-webkit-transition: opacity 250ms ease-in-out;
+	-moz-transition: opacity 250ms ease-in-out;
+	-o-transition: opacity 250ms ease-in-out;
+	-ms-transition: opacity 250ms ease-in-out;
+	transition: opacity 250ms ease-in-out;
+}
+#photoGallery_Close {
+	position: fixed;
+	right:0;top:0;
+	height: 24px;
+	width: 24px;
+	background: #000 url('close.png') no-repeat;
+	border: 3px ridge #FFF;
+	border-radius: 5px;
+	cursor: pointer;
+}
+#photoGallery_Container {
+	width: 90%;
+	height: 90vh;
+	margin: 5vh 5%;
+}
+#photoGallery_Viewer {
+	width: 100%;
+	height: 75%;
+	float: left;
+	background-color: #000;
+}
+#photoGallery_PreviousImage {
+	width: 10%;
+	height: 100%;
+	float: left;
+	background-color: #080808;
+	border-right: 4px ridge #FFF;
+	border-top-right-radius: 33%;
+	border-bottom-right-radius: 33%;
+	cursor: pointer;
+}
+#photoGallery_NextImage {
+	width: 10%;
+	height: 100%;
+	float: right;
+	background-color: #080808;
+	border-left: 4px ridge #FFF;
+	border-top-left-radius: 33%;
+	border-bottom-left-radius: 33%;
+	cursor: pointer;
+}
+#photoGallery_Frame {
+	float: left;
+	height: 100%;
+}
+#photoGallery_Current {
+	width: 100%;
+	max-height: 100%;
+}
+#photoGallery_Current img {
+	position: absolute;
+}
+#photoGallery_Caption {
+	font-size: 12px;
+	width: 100%;
+	min-height: 0px;
+	max-height: 48px;
+	color: #FFF;
+	text-align: center;
+	overflow-y: scroll;
+}
+#photoGallery_Selector {
+	width: 100%;
+	height: 25%;
+	float: left;
+}
+#photoGallery_ScrollLeft {
+	width: 5%;
+	height: 100%;
+	float: left;
+	background-color: #000;
+	border-right: 4px ridge #FFF;
+	border-top-right-radius: 33%;
+	border-bottom-right-radius: 33%;
+	cursor: pointer;
+}
+#photoGallery_Pictures {
+	margin: 0 6%;
+	height: 100%;
+	background-color: #080808;
+	border-top: 4px ridge #FFF;
+	border-top-left-radius: 10%;
+	border-top-right-radius: 10%;
+	border-bottom: 4px ridge #FFF;
+	border-bottom-left-radius: 10%;
+	border-bottom-right-radius: 10%;
+}
+#photoGallery_ScrollRight {
+	width: 5%;
+	height: 100%;
+	float: right;
+	background-color: #000;
+	border-left: 4px ridge #FFF;
+	border-top-left-radius: 33%;
+	border-bottom-left-radius: 33%;
+	cursor: pointer;
+}
+#photoGallery_CurrentImage {
+	opacity: 0;
+	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	-ms-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
+}
