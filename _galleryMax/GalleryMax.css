@@ -33,7 +33,6 @@
 	background-color: #000;
 }
 #photoGallery_PreviousImage {
-	width: 10%;
 	height: 100%;
 	float: left;
 	background-color: #080808;
@@ -43,7 +42,6 @@
 	cursor: pointer;
 }
 #photoGallery_NextImage {
-	width: 10%;
 	height: 100%;
 	float: right;
 	background-color: #080808;
@@ -64,10 +62,14 @@
 	position: absolute;
 }
 #photoGallery_Caption {
-	font-size: 12px;
-	width: 100%;
 	min-height: 0px;
 	max-height: 48px;
+	overflow: hidden;
+}
+#photoGallery_CaptionIn {
+	min-height: 0px;
+	max-height: 48px;
+	font-size: 12px;
 	color: #FFF;
 	text-align: center;
 	overflow-y: scroll;
@@ -78,7 +80,6 @@
 	float: left;
 }
 #photoGallery_ScrollLeft {
-	width: 5%;
 	height: 100%;
 	float: left;
 	background-color: #000;
@@ -87,8 +88,8 @@
 	border-bottom-right-radius: 33%;
 	cursor: pointer;
 }
-#photoGallery_Pictures {
-	margin: 0 6%;
+#photoGallery_ThumbFrame {
+	float: left;
 	height: 100%;
 	background-color: #080808;
 	border-top: 4px ridge #FFF;
@@ -99,7 +100,6 @@
 	border-bottom-right-radius: 10%;
 }
 #photoGallery_ScrollRight {
-	width: 5%;
 	height: 100%;
 	float: right;
 	background-color: #000;
